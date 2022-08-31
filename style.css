@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:ital,wght@0,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2ebe3;
+    font-family: "Montserrat";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 120vh;
+}
+
+h1 {
+    font-family: "Fraunces";
+    color: hsl(212, 21%, 14%);
+    margin-bottom: 13px;
+}
+
+p,
+span {
+    color: hsl(228, 12%, 48%);
+
+}
+
+main {
+    border-radius: 10px;
+    background-color: white;
+    width: 350px;
+    margin-bottom: 50px;
+    overflow: hidden;
+
+}
+
+.image {
+    height: 250px;
+    width: 100%;
+    background-image: url(images/image-product-mobile.jpg);
+    background-size: 100% 100%;
+    background-color: red;
+
+}
+
+
+.contents {
+    padding: 20px;
+}
+
+.contents>p:first-of-type {
+    letter-spacing: 6px;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+p.desc {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+button {
+    cursor: pointer;
+    text-align: center;
+    padding: 15px 80px;
+    width: 90%;
+    border: none;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 7px;
+}
+
+button:active {
+    background-color: hsl(159, 36%, 25%);
+}
+
+button i {
+    margin-right: 10px;
+}
+
+.button-center {
+    text-align: center;
+    margin: 10px 0 25px;
+}
+
+p.price {
+    position: relative;
+    font-size: 35px;
+    font-family: "Fraunces";
+    font-weight: bold;
+    color: hsl(158, 36%, 37%);
+
+}
+
+.price-2 {
+    padding-top: 15px;
+    padding-left: 20px;
+    position: absolute;
+    font-size: small;
+    text-decoration: line-through;
+}
+
+@media screen and (min-width: 620px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    main {
+        display: flex;
+        width: 600px;
+
+    }
+
+    .contents {
+        padding-left: 30px;
+        width: 50%;
+
+    }
+
+    .image {
+        background-image: url(images/image-product-desktop.jpg);
+        background-size: 100% 100%;
+        width: 50%;
+        height: 100%;
+
+    }
+
+    button {
+        padding: 14px 40px;
+    }
+
+    ;
+
+
+}
